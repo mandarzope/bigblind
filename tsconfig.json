@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "module": "CommonJs",
+        "target": "ES5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "outDir": "build",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "templates": [
+                "sam/templates"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "src/stacks/**/functions/**/*.spec.ts"
+    ],
+    "include": [
+        "src/stacks/**/functions/**/*.ts"
+    ]
+}
